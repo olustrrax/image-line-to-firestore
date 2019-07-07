@@ -46,7 +46,7 @@ const getImage = (event) => {
     encoding: null 
   }).then(async buffer => {
     let date = moment(event.timestamp).utcOffset('+0700').format('DD-MM-YYYY')
-    var imagesRef = storageRef.child(`${date}/${event.message.id}.jpg`).put(buffer,metadata);
+    var imagesRef = storageRef.child(`${date}/images/${event.message.id}.jpg`).put(buffer,metadata);
     await imagesRef.on('state_changed', function(snapshot){
       var progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
       console.log('Upload is ' + progress + '% done');
