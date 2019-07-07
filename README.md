@@ -9,7 +9,8 @@ Don't forget to create config.json in the function folder and insert data config
     "databaseURL": "https://XXX.firebaseio.com",
     "projectId": "XXX",
     "storageBucket": "XXX.appspot.com",
-    "messagingSenderId": "", //Line Sender ID
-    "appId": "" //Line App ID 
+    "messagingSenderId": "",
+    "appId": "",
+    "accessToken": "" //Line Access token
   }
 ```
